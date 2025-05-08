@@ -25,9 +25,7 @@ public class LearnLayout {
 //		frame.add(register_2);
 //		frame.add(register_3);
 //		frame.add(register_4);
-		
-		
-		
+
 		// GridLayout
 //		GridLayout gridLayout = new GridLayout(4, 4);
 //		frame.setLayout(gridLayout);
@@ -35,10 +33,8 @@ public class LearnLayout {
 //		for(int i = 1; i <= 20; ++i) {
 //			frame.add(new JButton(i + ""));
 //		}
-		
-		
-		
-		// Border Layout
+
+//		// Border Layout
 //		BorderLayout borderLayout = new BorderLayout(4, 4);
 //		frame.setLayout(borderLayout);
 //		JButton register_1 = new JButton("Register 1");
@@ -52,7 +48,20 @@ public class LearnLayout {
 //		frame.add(register_4, BorderLayout.WEST);
 //		frame.add(register_5, BorderLayout.CENTER);
 		
-		
+		// BoxLayout
+//		JPanel panel = new JPanel();
+//		panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
+//		
+//		panel.add(Box.createHorizontalGlue());
+//		panel.add(new JButton("Nút 1"));
+//		panel.add(Box.createHorizontalStrut(10)); // khoảng cách 10px
+//		panel.add(new JButton("Nút 2"));
+//		panel.add(Box.createHorizontalStrut(10)); // khoảng cách 10px
+//		panel.add(new JButton("Nút 3"));
+//		panel.add(Box.createHorizontalGlue());
+
+//		frame.add(panel);
+
 		frame.setLocationRelativeTo(null);
 		frame.setVisible(true);
 	}
