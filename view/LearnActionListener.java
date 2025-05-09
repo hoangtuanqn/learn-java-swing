@@ -1,10 +1,15 @@
 package view;
 
 import java.awt.*;
-import javax.swing.*;
 
-public class MyCalculator extends JFrame {
-	public MyCalculator() {
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.UIManager;
+
+public class LearnActionListener extends JFrame {
+	public LearnActionListener() {
 		this.setTitle("My Calculator");
 		Image icon = Toolkit.getDefaultToolkit().getImage("src/images/favicon.png");
 		this.setIconImage(icon);
@@ -14,21 +19,7 @@ public class MyCalculator extends JFrame {
 		
 		this.setLayout(new BorderLayout());
 		
-//		Text Feild
-		JTextField text = new JTextField();
-		this.add(text, BorderLayout.NORTH);
 		
-		JPanel panel1 = new JPanel();
-		panel1.setLayout(new GridLayout(5, 3));
-		
-		char[] lists = {'+', '-', '*', '/', '='};
-		for(int i = 0; i <= 9; ++i) {
-			panel1.add(new JButton(i + ""));
-		}
-		for(char list : lists) {
-			panel1.add(new JButton(list + ""));
-		}
-		this.add(panel1, BorderLayout.CENTER);
 		
 		
 		
